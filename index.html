@@ -5,7 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Book | رفيقك التعليمي المدعوم بالذكاء الاصطناعي</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- خطوط عربية -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
       body {
@@ -21,19 +25,25 @@
         animation: gradient-animation 15s ease infinite;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
-  }
-}
-</script>
-</head>
-  <body class="bg-gray-900">
+
+    <!-- ImportMap (Google Studio AI CDN) -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+      }
+    }
+    </script>
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <!-- هذا هو الجذر الذي يركّب عليه React -->
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+
+    <!-- ربط React -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
